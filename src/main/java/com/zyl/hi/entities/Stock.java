@@ -52,4 +52,13 @@ public class Stock implements java.io.Serializable {
     public void setOper(Stock stock) {
         this.stock = stock;
     }
+
+    @Override
+    public String toString() {
+        return "Stock{" +
+                "stockId=" + stockId +
+                ", stockCode='" + stockCode + '\'' +
+                ", stockName='" + stockName + '\'' +
+                '}';
+    }
 }

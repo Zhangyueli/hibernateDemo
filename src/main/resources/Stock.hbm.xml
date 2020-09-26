@@ -5,14 +5,13 @@
 <hibernate-mapping>
     <class name="com.zyl.hi.entities.Stock" table="stock">
         <id name="stockId" type="java.lang.Integer">
-            <column name="STOCK_ID" />
-            <generator class="identity" />
+            <column name="STOCK_ID"/>
+            <generator class="identity"/>
         </id>
         <property name="stockCode" type="string">
-            <column name="STOCK_CODE" length="10" not-null="true" unique="true" />
+            <column name="STOCK_CODE" length="10"/>
         </property>
-        <property name="stockName" type="string">
-            <column name="STOCK_NAME" length="20" not-null="true" unique="true" />
-        </property>
+        <property name="stockName" column="STOCK_NAME" length="20" type="string"/>
+
     </class>
 </hibernate-mapping>
